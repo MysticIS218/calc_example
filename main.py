@@ -9,4 +9,3 @@ def inc(x_value):
 def test_answer():
     """This Tests the function"""
     assert inc(4) == 5
-    
