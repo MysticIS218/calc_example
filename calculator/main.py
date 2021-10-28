@@ -22,5 +22,5 @@ class Calculator:
     def divide_numbers(self, value_a, value_b):
         """ multiply two numbers and store the result"""
         if value_b != 0: self.result = value_a / value_b
-        else: print "ZeroDivisonError"
+        else: print ("ZeroDivisonError")
         return self.result
