@@ -30,3 +30,4 @@ def test_calculator_multiply_static(clear_history_fixture):
     my_tuple = (1.0,2.0,3.0)
     Calculator.multiply_numbers(my_tuple)
     assert Calculator.get_result_value() == 6.0
+    
