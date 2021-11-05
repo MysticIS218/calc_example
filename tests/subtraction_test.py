@@ -9,3 +9,4 @@ def test_calculation_subtraction():
     #Act
     #Assert
     assert subtraction.get_result() == -3
+    
