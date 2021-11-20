@@ -52,3 +52,7 @@ class Calculations:
         """Add a multiplication object to history using factory method create"""
         Calculations.add_calculation(Multiplication.create(values))
         return True
+    @staticmethod
+    def add_divison_calculation(values):
+        """add a division object to history using factory method"""
+        Calculations.add_calculation(Division.create(values))
