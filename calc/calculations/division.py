@@ -1,3 +1,4 @@
+"""Division class"""
 from calc.calculations.calculation import Calculation
 
 class Division(Calculation): # pylint: disable=too-few-public-methods
