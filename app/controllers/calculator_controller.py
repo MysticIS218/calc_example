@@ -1,3 +1,4 @@
+from flask import Flask, flash, redirect, render_template, \ request, url_for
 from app.controllers.controller import ControllerBase
 from calc.calculator import Calculator
 from flask import render_template, request, flash, redirect, url_for
@@ -6,6 +7,7 @@ from flask import render_template, request, flash, redirect, url_for
 class CalculatorController(ControllerBase):
     @staticmethod
     def post():
+        flash('successful, calculating')
         if request.form['value1'] == '' or request.form['value2'] == '':
             error = 'You must enter a value for value 1 and or value 2'
         else:
@@ -25,10 +27,5 @@ class CalculatorController(ControllerBase):
         return render_template('calculator2.html', error=error)
     @staticmethod
     def get():
+        flash('successful, one sec')
         return render_template('calculator2.html')
-
-
-
-
-
-
