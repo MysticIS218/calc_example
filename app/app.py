@@ -6,6 +6,21 @@ from app.controllers.calculator_controller import CalculatorController
 app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    Operation = db.Column(db.String(64), index=True)
+    value1 = db.Column(db.Integer, index=True)
+    value2 = db.Column(db.Integer, index=True)
+    result = db.Column(db.String(256))
+
+    def to_dict(self):
+        return {
+            'operation': self.calculation,
+            'value1': self.value1,
+            'value2': self.value2,
+            'result': self.result,
+        }
+
 @app.route("/", methods=['GET'])
 def index_get():
     return IndexController.get()
