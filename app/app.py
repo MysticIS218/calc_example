@@ -21,6 +21,9 @@ class User(db.Model):
             'result': self.result,
         }
 
+    if __name__ == '__main__':
+        app.run()
+        
 @app.route("/", methods=['GET'])
 def index_get():
     return IndexController.get()
