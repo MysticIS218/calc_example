@@ -6,4 +6,4 @@ Trying to figure out why it is not working. Installed the package but pycharm do
 ![image](https://user-images.githubusercontent.com/91106087/146010929-f04c26b4-9f44-4f38-b2be-e607a4d028d0.png)
 BEAUTIFUL TABLES
 
-![image](https://user-images.githubusercontent.com/91106087/146012657-5b933e74-b38e-4d1b-b9a2-f0d3d0950bdc.png)
+![image](https://user-images.githubusercontent.com/91106087/146015747-e1917be7-fea4-4fba-84c3-50f30fcd951c.png)
