@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>SOLID</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+	  img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	  }
+	  p {
+		text-align: left;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+	  }
+	  code {
+		display: inline-block;
+		background: #f2f2f2;
+		border: 1px solid #d1d2d3;
+		padding: 0px 4px;
+		margin-right: 4px;
+		border-radius: 4px;
+		color: #697A89;
+	  }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="SOLID.css" rel="stylesheet">
+  </head>
+  <body class="d-flex text-center text-white bg-dark">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">Glossary</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="git.html">Git</a>
+        <a class="nav-link active" aria-current="page" href="Bootstrap.html">Bootstrap</a>
+        <a class="nav-link" href="AzureCloud.html">Azure</a>
+        <a class="nav-link" href="docker.html">Docker</a>
+        <a class="nav-link" href="linux.html">Linux</a>
+        <a class="nav-link" href="AAA_Testing.html">AAA-Testing</a>
+        <a class="nav-link" href="OOP_glossary.html">Glossary</a>
+        <a class="nav-link" href="SOLID.html">SOLID</a>
+        <a class="nav-link" href="principles_OOP.html">Principles</a>
+
+
+      </nav>
+    </div>
+  </header>
+  
+  <main class="px-3">
+    <br><h1><h1>SOLID Object Orientied Design</h1>
+    <br><p>
+    <code>S - Single Responsibility Principle</code> states a class should have only one reason to change meaning a class should have only one job. In our calculator, 
+    the responsibility of creating classes were left to <code>calculations.py</code> while the actual logic or implementation is handled in each of there respective files (e.g. <code>division.py</code> )
+    <code>calculator.py</code> contains contains methods to calculate and contains no other information.<br><br>
+    <img src="pictures/addition.png" alt="Git Bash" class="center" style="width:100%;">
+    <code>Note:</code> Here the addition class job is to just to calculate addition logic but in calculations.py they were added to histroy without additional logic. <br><br>
+
+    <code>O - Open Closed Principle</code> states "A class should be open for extension, but closed for modifications". What this means we should be able to extend a class or add on to a class without modifying the class itself. 
+    For example, in <code>calculations.py</code> we use Multiplication class <code>from calc.calculations.multiplication import Multiplication</code> without changing the logic being done in <code>multiplication.py</code>.<br><br>
+
+    <code>L - Liskov Substitution Principle</code> states derived classes must be substitutable for there base classes. You should be able to change an instance using sub-type and your own code still should work.<br><br>
+   
+    <code>I - Intergace Segregation Principle</code> states to make it that a client isn't being forced to implement an interface neither force to depend on methonds they do not use. More interfaces are better than too little. Allows to split the responsibility of a class without violating Liskov's principle.<br><br>
+    
+    <code>D - Dependency Inversion Principle</code> states to depend on abstractions and not concrete instances. states that the high-level module must not depend on the low-level module, but they should depend on abstraction.<br><br>
+   
+
+
+
+	<b><i>Source:</b></i> <a href="https://towardsdatascience.com/solid-coding-in-python-1281392a6a94">https://towardsdatascience.com/solid-coding-in-python-1281392a6a94</a> <br><br><br>
+	<br><br>
+	</p>
+	
+    </h1></h1>
+
+  </main>
+
+  <footer class="mt-auto text-white-50">
+    <p style="text-align: center;">Creators: <a href="https://github.com/tlr24/IS218Project1" class="text-white">Syed</a></p>
+  </footer>
+</div>
+
+
+    
+  </body>
+</html>

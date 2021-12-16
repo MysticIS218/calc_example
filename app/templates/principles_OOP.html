@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Glossary</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+	  img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	  }
+	  p {
+		text-align: left;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+	  }
+	  code {
+		display: inline-block;
+		background: #f2f2f2;
+		border: 1px solid #d1d2d3;
+		padding: 0px 4px;
+		margin-right: 4px;
+		border-radius: 4px;
+		color: #697A89;
+	  }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="principles.css" rel="stylesheet">
+  </head>
+  <body class="d-flex text-center text-white bg-dark">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">Glossary</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="git.html">Git</a>
+        <a class="nav-link active" aria-current="page" href="Bootstrap.html">Bootstrap</a>
+        <a class="nav-link" href="AzureCloud.html">Azure</a>
+        <a class="nav-link" href="docker.html">Docker</a>
+        <a class="nav-link" href="linux.html">Linux</a>
+        <a class="nav-link" href="AAA_Testing.html">AAA-Testing</a>
+        <a class="nav-link" href="OOP_glossary.html">Glossary</a>
+        <a class="nav-link" href="SOLID.html">SOLID</a>
+        <a class="nav-link" href="principles_OOP.html">Principles</a>
+
+
+      </nav>
+    </div>
+  </header>
+  
+  <main class="px-3">
+    <br><h1><h1>OOP Calculator</h1>
+    <br><p>
+    <code>Abstraction</code> is used when we want to show the client exactly what is necessary and nothing more. You can consider them much like blueprints for multiple classes. It allows you to create a set of methods that must be created within any child class built from the abstract class. A abstract class is a class that allows us to 
+    implement methods as well as interfaces. While abstract methods, allows for methods to be later implemented on a child. In our calculator program, we had an abstract base class where we converted tuples to floats.
+    <img src="pictures/abstract.png" alt="Git Bash" class="center" style="width:100%;">
+    <code>Note:</code> This calculation.py file also had the class method which bounds that method to class. This class later gets used in our implementation classes (e.g. multiplication). Therefore, we do not need to show clients how they were converted or information that is not necessary such as the logic behind the math. <br><br>
+
+    <code>Encapsulaton</code> is often used to make sure a class doesn't access a data directly unless it is suppose to. It is done by private and protected variables and are provided to others by getter and setter methods. In our calculator, the file calculation.py we protect the values after they get converted from tuple <code>        self.values = Calculation.convert_args_to_tuple_of_float(values)
+    </code> to make sure they do not get accidently mannipulated in anyway because it would mean it could contain values aside from floats. <br><br>
+
+    <code>Polymorphism</code> is when we have same function name but they have different implementations. When we inherit a class we can use method overriding to allow a different functionality to a inherited method. <br><br>
+    <img src="pictures/polymorphism.png" alt="Git Bash" class="center" style="width:100%;">
+    <code>Source: https://www.geeksforgeeks.org/polymorphism-in-python/</code><br><br>
+    
+    <code>Inhertiance</code> is done when one class inherits the properties of another class. This allows for the reusability of code and saves space. For example, in our calculator, we convert every tuple to float in <code>calculation.py</code>. Originally, the conversion was done in every operation class (multiplication, addition, divison, subtraction), however as we can see that would be very repetitive.
+     That is why we created calculation.py and placed conversion method there which later gets inherited by every operation class.<br><br>
+    <img src="pictures/abstract.png" alt="Git Bash" class="center" style="width:100%;">
+    <img src="pictures/addition.png" alt="Git Bash" class="center" style="width:100%;"> <br><br>
+
+
+
+
+	<br><br>
+	</p>
+	
+    </h1></h1>
+
+  </main>
+
+  <footer class="mt-auto text-white-50">
+    <p style="text-align: center;">Creators: <a href="https://github.com/tlr24/IS218Project1" class="text-white">Syed</a></p>
+  </footer>
+</div>
+
+
+    
+  </body>
+</html>

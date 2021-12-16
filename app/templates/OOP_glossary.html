@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Glossary</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+	  img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	  }
+	  p {
+		text-align: left;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+	  }
+	  code {
+		display: inline-block;
+		background: #f2f2f2;
+		border: 1px solid #d1d2d3;
+		padding: 0px 4px;
+		margin-right: 4px;
+		border-radius: 4px;
+		color: #697A89;
+	  }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="OOP_glossary.css" rel="stylesheet">
+  </head>
+  <body class="d-flex text-center text-white bg-dark">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">Glossary</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="git.html">Git</a>
+        <a class="nav-link active" aria-current="page" href="Bootstrap.html">Bootstrap</a>
+        <a class="nav-link" href="AzureCloud.html">Azure</a>
+        <a class="nav-link" href="docker.html">Docker</a>
+        <a class="nav-link" href="linux.html">Linux</a>
+        <a class="nav-link" href="AAA_Testing.html">AAA-Testing</a>
+        <a class="nav-link" href="OOP_glossary.html">Glossary</a>
+        <a class="nav-link" href="SOLID.html">SOLID</a>
+        <a class="nav-link" href="principles_OOP.html">Principles</a>
+
+
+      </nav>
+    </div>
+  </header>
+  
+  <main class="px-3">
+    <br><h1><h1>Glossary</h1>
+    <br><p>
+    <code>Pylint</code> is used to check for bugs and quality for the Python Programming Language.
+    <code>Hints:</code> Most likely you will always recieve some type of error which is why we are using pylint in the first place.
+    One of the most important skills when it comes to using pylint is reading errors and finding how to fix them.
+    Most of the times the errors are very specific so it will tell you what exactly you did wrong such as missing docstring or newline. Pay attention to what the programming is telling you and over time you will know what is needed in every page.<br><br>
+    1. <code>Factory</code> is function or method that returns objects or multiple types, which is assumed to be new. An example would be how we created a factory method CLS for the calculator which would instantiate addition, subtraction, multiplication, and division. <br><br>
+    <img src="pictures/factory_method.png" alt="Git Bash" class="center" style="width:100%;"> <br>
+    <img src="pictures/factory_usage.png" alt="Git Bash" class="center" style="width:100%;"> 
+    <code>Creates an addition and adds object to history using factory method "create"</code><br><br>
+
+    2. <code>Instantiation</code> is when we create object of a defined class. In language like java when we use the "new" keyword it creates an instance of a specific class (object). <br><br>
+    <img src="pictures/Instantiation.png" alt="Git Bash" class="center" style="width:100%;"> 
+    <code>Here addition would be an instance of Addition()</code><br><br>
+
+    3. <code>Object</code> is an instance of a class. In calculator project we had addition objects (as shown in the previous image), subtraction objects, and much more.<br><br>
+    4. <code>Class</code> is a blueprint for a object. For instance, a class can be about an animal and with it you can describe different animals as objects. <br><br>
+    5. <code>Namespace</code> refers to a collection of names. When a reference is made inside a function, the name is searched in the local namespace, then in the global namespace and finally in the built-in namespace.
+     The namespace allows to see accessability or scope of a variable or method. <br><br>
+    6. <code>Constructor</code> is a special method used to initilize objects. Often is used to set initial values for objects. <br><br>
+    <img src="pictures/constructor.png" alt="Git Bash" class="center" style="width:100%;"> 
+    <code>Note:</code> In the previous image we passed Addition(mynumbers) where mynumbers is being used as the initial vlaues to be added which gets converted by the constructor.<br><br>
+    7.<code>Fixure</code> is a function that will run each time you pass it to a test. In the calculator clear_history is a ficture because it is being used repeatedly to test functions. <br><br>
+    <img src="pictures/fixture.png" alt="Git Bash" class="center" style="width:100%;"> 
+    <code>Note:</code> You have to add the fixture function as a parameter to the test that you want to use it with. <br> <br>
+    8. <code>Type hint</code> specifies expected parameter type. For instance, in our previous image the constructor <code>def __init__(self,values: tuple): </code> was expecting argument type tuple. <br><br>
+    9. <code>Type cast</code> is when we convert the data type of an object to required data type. For example, in this line of code <code>list_values_float.append(float(item))</code> from our calculator <code>item</code> which is originally recieved from type tuple is being converted to a float to make sure we do not recieve random data types. <br><br>
+    10. <code>Unit test</code> is the method of testing individual components of programs to make sure everything does exactly what it is suppose to do. <br><br>
+    <img src="pictures/unit testing.png" alt="Git Bash" class="center" style="width:100%;"> 
+    <code>Note:</code> AAA-Testing is a great way to structure test cases. Consists of 3 stages Arrange -> Act -> Assert<br> <br>
+    11. <code>Static</code> functions can provide functionality related to an a particular class without requiring the us to first create an instance (object) of that class. <br><br>
+    <img src="pictures/fixture.png" alt="Git Bash" class="center" style="width:100%;"> 
+      <code>Enter calc image Here</code><br><br>
+    12. <code>Class method</code> is a method which is bounded to the class itself rather than an instance of the class. Typically useful when we need to access the class itself. For example, when we want to create a factory method, that is a method that creates instances of the class. In other words, classmethods can serve as alternative constructors.
+    <img src="pictures/class_method.png" alt="Git Bash" class="center" style="width:100%;"><br><br>
+    <code>Note:</code> The first argument is the class (cls). <br><br>
+    14. <code>Facade</code> pattern purpose is to hide a lot of complexity in systems. <br><br>
+
+
+
+	<b><i>Source:</b></i> <a href="https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/">https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/</a> <br><br><br>
+	<br><br>
+	</p>
+	
+    </h1></h1>
+
+  </main>
+
+  <footer class="mt-auto text-white-50">
+    <p style="text-align: center;">Creators: <a href="https://github.com/tlr24/IS218Project1" class="text-white">Syed</a></p>
+  </footer>
+</div>
+
+
+    
+  </body>
+</html>

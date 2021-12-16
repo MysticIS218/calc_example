@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>AAA-Testing Tutorial</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+	  img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	  }
+	  p {
+		text-align: left;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+	  }
+	  code {
+		display: inline-block;
+		background: #f2f2f2;
+		border: 1px solid #d1d2d3;
+		padding: 0px 4px;
+		margin-right: 4px;
+		border-radius: 4px;
+		color: #697A89;
+	  }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="AAA_test.css" rel="stylesheet">
+  </head>
+  <body class="d-flex text-center text-white bg-dark">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">AAA-Testing</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="git.html">Git</a>
+        <a class="nav-link active" aria-current="page" href="Bootstrap.html">Bootstrap</a>
+        <a class="nav-link" href="AzureCloud.html">Azure</a>
+        <a class="nav-link" href="docker.html">Docker</a>
+        <a class="nav-link" href="linux.html">Linux</a>
+        <a class="nav-link" href="AAA_Testing.html">AAA-Testing</a>
+        <a class="nav-link" href="OOP_glossary.html">Glossary</a>
+        <a class="nav-link" href="SOLID.html">SOLID</a>
+        <a class="nav-link" href="principles_OOP.html">Principles</a>
+
+
+      </nav>
+    </div>
+  </header>
+  
+  <main class="px-3">
+    <br><h1><h1>Tutorial on AAA-Testing</h1>
+    <br><p>
+    <code>Arrange-Act-Assert</code> is a great way to structure test cases. This method is fairly simple and straight forward. It consists of 3 stages Arrange, Act, and Assert.<br><br>
+    1. <code>Arrange</code> step should set up the test case. Does the test require any objects or special settings? Does it need to prep a database? Does it need to log into a web app? Handle all of these operations at the start of the test. 
+    For instance, in our calculator for division we arrange the number and operation to be tested. <code>numbers = (18.0, 6.0) <br> division = Division(numbers)</code><br><br>
+    2. <code>Act</code> should cover the main thing to be tested. This could be calling a function or method, calling a REST API, or interacting with a web page.  <code>answer = abs(negative)</code> Here <code>abs</code> in acting on the target's behavior.<br><br>
+    3. <code>Assert</code> expected outcomes. This is where you test a case to see if it matches an outcome. Act steps should elicit some sort of response. Assert steps verify the goodness or badness of that response. Sometimes, assertions are as simple as checking numeric or string values. Other times, they may require checking multiple facets of a system. Assertions will ultimately determine if the test passes or fails. In our calculator <code>assert division.get_result() == 3.0</code> this line checks whether our function output is correct. <br><br>
+	<img src="pictures/AAA-test1.png" alt="Git Bash" class="center" style="width:100%;"> <br>
+    <img src="pictures/unit testing.png" alt="Git Bash" class="center" style="width:100%;">
+
+    <code>NOTE:</code>There are several different kinds of tests, like unit tests, integration tests, or end-to-end tests, but all functional tests do the same basic thing: they try something and report PASS or FAIL. <br><br>
+
+	<b><i>Source:</b></i> <a href="https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/">https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/</a> <br><br><br>
+	<br><br>
+	</p>
+	
+    </h1></h1>
+
+  </main>
+
+  <footer class="mt-auto text-white-50">
+    <p style="text-align: center;">Creators: <a href="https://github.com/tlr24/IS218Project1" class="text-white">Syed</a></p>
+  </footer>
+</div>
+
+
+    
+  </body>
+</html>
