@@ -2,6 +2,10 @@
 from flask import Flask
 from app.controllers.index_controller import IndexController
 from app.controllers.calculator_controller import CalculatorController
+from app.controllers.index_controller import IndexController
+from app.controllers.calculator_controller import CalculatorController
+from app.controllers.history_controller import HistoryController
+from app.controllers.article_controller import ArtilceController
 
 app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
@@ -35,3 +39,24 @@ def calculator_get():
 @app.route("/calculator", methods=['POST'])
 def calculator_post():
     return CalculatorController.post()
+
+@app.route("/oop_principles", methods=['GET'])
+def oop_principles_get():
+    """Get the OOP principles article from the Article Controller"""
+    return ArticleController.get_oop_principles()
+
+@app.route("/SOLID_principles", methods=['GET'])
+def SOLID_Principles_get():
+    """Get the OOP principles article from the Article Controller"""
+    return ArticleController.get_SOLID_principles()
+
+@app.route("/glossary", methods=['GET'])
+def glossary_get():
+    """Get the OOP principles article from the Article Controller"""
+    return ArticleController.get_glossary()
+
+@app.route("/AAA-testing", methods=['GET'])
+def AAA_testing_get():
+    """Get the OOP principles article from the Article Controller"""
+    return ArticleController.get_AAAtesting()
+
