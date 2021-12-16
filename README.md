@@ -1,7 +1,7 @@
 #my calculator program
 
+![image](https://user-images.githubusercontent.com/91106087/146300828-2bc9ba2e-42ff-46be-896e-8f9f8e31b8d5.png)
 
-![image](https://user-images.githubusercontent.com/91106087/146010929-f04c26b4-9f44-4f38-b2be-e607a4d028d0.png)
 BEAUTIFUL TABLES
 
 ![image](https://user-images.githubusercontent.com/91106087/146015747-e1917be7-fea4-4fba-84c3-50f30fcd951c.png)
