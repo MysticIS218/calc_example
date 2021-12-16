@@ -2,9 +2,9 @@
 from flask import Flask
 from app.controllers.index_controller import IndexController
 from app.controllers.calculator_controller import CalculatorController
-from app.controllers.index_controller import IndexController
 from app.controllers.calculator_controller import CalculatorController
 from app.controllers.history_controller import HistoryController
+from app.controllers.index_controller import IndexController
 from app.controllers.article_controller import ArtilceController
 
 app = Flask(__name__)
