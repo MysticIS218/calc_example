@@ -10,6 +10,8 @@ from app.controllers.article_controller import ArtilceController
 app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
+#No longer required recent changes
+"""
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     Operation = db.Column(db.String(64), index=True)
@@ -27,7 +29,8 @@ class User(db.Model):
 
     if __name__ == '__main__':
         app.run()
-        
+"""
+
 @app.route("/", methods=['GET'])
 def index_get():
     return IndexController.get()
